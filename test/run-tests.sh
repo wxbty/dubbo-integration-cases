@@ -248,10 +248,10 @@ function process_case() {
           echo "$log_prefix $TEST_FAILURE: $error_msg, version: $version_profile, please check logs: $scenario_home/logs" | tee -a $testResultFile
         else
           echo "$log_prefix $TEST_FAILURE, version: $version_profile, please check logs: $scenario_home/logs" | tee -a $testResultFile
-            echo "=======begin ====="
-            cat $scenario_log
-            echo "=======end ====="
         fi
+        echo "=======begin ====="
+        cat $scenario_log
+        echo "=======end ====="
       fi
 
       # show test log
